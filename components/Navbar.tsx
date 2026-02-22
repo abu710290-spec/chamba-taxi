@@ -88,7 +88,7 @@ export default function Navbar() {
               transition={{ duration: 0.2 }}
               className="fixed left-0 right-0 top-[57px] sm:top-[65px] z-50 md:hidden max-h-[calc(100vh-65px)] overflow-y-auto border-t border-white/10 shadow-2xl bg-black"
             >
-              <div className="p-5 flex flex-col gap-1">
+              <div className="p-5 flex flex-col gap-1 h-[100vh]">
                 {navLinks.map((link) => (
                   <Link
                     key={link.name}
