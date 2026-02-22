@@ -38,7 +38,8 @@ const placeholders = {
   },
 };
 
-export function getImage(path: 'hero' | 'fleetSedan' | 'fleetSuv' | 'fleetTempo' | 'aboutTeam' | 'aboutHero' | 'og'): string {
+export function getImage(path: 'hero' | 'fleetSedan' | 'fleetSuv' | 'fleetTempo' | 'aboutTeam' | 'aboutHero' | 'og' | 'heroCar'): string {
+  if (path === 'heroCar') return '/images/traveling-with-off-road-car.jpg';
   const localPath = local(
     path === 'hero' ? 'hero.jpg' :
     path === 'fleetSedan' ? 'fleet-sedan.jpg' :

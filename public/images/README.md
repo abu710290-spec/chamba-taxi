@@ -16,6 +16,7 @@ Ab aap yahan apni **real photos** rakh sakte ho. Jab yeh files add karoge aur `.
 | File | Use | Suggested size |
 |------|-----|----------------|
 | `hero.jpg` | Home page hero background | 1920×1080 ya bada |
+| `traveling-with-off-road-car.jpg` | Hero right side – off-road car image | 800×600 ya 4:3 |
 | `fleet-sedan.jpg` | Sedan (Swift Dzire) card | 600×400 |
 | `fleet-suv.jpg` | SUV (Innova) card | 600×400 |
 | `fleet-tempo.jpg` | Tempo Traveller card | 600×400 |

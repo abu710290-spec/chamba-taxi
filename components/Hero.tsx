@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { Car, Phone, MessageCircle, ArrowRight, Star, ShieldCheck, Clock } from 'lucide-react';
+import { Phone, MessageCircle, Star, ShieldCheck, Clock } from 'lucide-react';
 import Image from 'next/image';
 import { getImage } from '@/lib/images';
 
@@ -88,44 +88,44 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.8, rotate: 5 }}
-          animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="relative hidden md:block w-full max-w-[min(100%,420px)] lg:max-w-[min(100%,480px)] xl:max-w-[520px] ml-auto"
         >
-          <div className="relative z-10 animate-float">
-            <div className="bg-yellow-400 p-5 sm:p-6 md:p-6 lg:p-8 xl:p-10 rounded-[2rem] md:rounded-[2.5rem] lg:rounded-[3rem] shadow-[0_0_80px_rgba(250,204,21,0.2)] w-full aspect-square max-w-[280px] md:max-w-[320px] lg:max-w-[380px] xl:max-w-[420px] mx-auto flex items-center justify-center">
-              <Car className="w-24 h-24 md:w-28 md:h-28 lg:w-36 lg:h-36 xl:w-44 xl:h-44 text-black shrink-0" />
-            </div>
-            
-            {/* Badges - inside viewport, no overflow */}
+          <div className="relative rounded-[2rem] md:rounded-[2.5rem] lg:rounded-[3rem] overflow-hidden shadow-2xl shadow-yellow-400/10 border border-white/10 aspect-[4/3] max-h-[320px] lg:max-h-[380px]">
+            <Image
+              src={getImage('heroCar')}
+              alt="Off-road taxi travel in Chamba"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 420px, 520px"
+              priority
+            />
+            {/* Badges overlay */}
             <motion.div 
-              animate={{ y: [0, -6, 0] }}
+              animate={{ y: [0, -4, 0] }}
               transition={{ repeat: Infinity, duration: 4 }}
-              className="absolute top-1 right-1 md:top-2 md:right-2 glass p-3 md:p-4 rounded-2xl flex items-center gap-2"
+              className="absolute top-2 right-2 md:top-3 md:right-3 glass p-2.5 md:p-3 rounded-xl flex items-center gap-2"
             >
-              <ShieldCheck className="w-5 h-5 md:w-6 md:h-6 text-yellow-400 shrink-0" />
+              <ShieldCheck className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 shrink-0" />
               <div className="min-w-0">
-                <p className="font-black text-[10px] md:text-xs">SAFE TRAVEL</p>
-                <p className="text-[8px] md:text-[10px] text-white/50">Verified Drivers</p>
+                <p className="font-black text-[9px] md:text-[10px]">SAFE TRAVEL</p>
+                <p className="text-[7px] md:text-[8px] text-white/50">Verified Drivers</p>
               </div>
             </motion.div>
-
             <motion.div 
-              animate={{ y: [0, 6, 0] }}
+              animate={{ y: [0, 4, 0] }}
               transition={{ repeat: Infinity, duration: 5 }}
-              className="absolute bottom-1 left-1 md:bottom-2 md:left-2 glass p-3 md:p-4 rounded-2xl flex items-center gap-2"
+              className="absolute bottom-2 left-2 md:bottom-3 md:left-3 glass p-2.5 md:p-3 rounded-xl flex items-center gap-2"
             >
-              <Clock className="w-5 h-5 md:w-6 md:h-6 text-yellow-400 shrink-0" />
+              <Clock className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 shrink-0" />
               <div className="min-w-0">
-                <p className="font-black text-[10px] md:text-xs">ON TIME</p>
-                <p className="text-[8px] md:text-[10px] text-white/50">Guaranteed</p>
+                <p className="font-black text-[9px] md:text-[10px]">ON TIME</p>
+                <p className="text-[7px] md:text-[8px] text-white/50">Guaranteed</p>
               </div>
             </motion.div>
           </div>
-
-          {/* Decorative Rings - contained */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] border border-white/5 rounded-full -z-10 pointer-events-none" />
         </motion.div>
       </div>
     </section>
