@@ -7,7 +7,7 @@ import { getImage } from '@/lib/images';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[100dvh] min-h-screen flex items-center overflow-hidden pt-20 sm:pt-24 md:pt-20 pb-8 sm:pb-12 w-full max-w-[100vw]">
+    <section className="relative flex items-center overflow-hidden pt-20 sm:pt-24 md:pt-20 pb-8 sm:pb-12 w-full max-w-[100vw]">
       {/* Background with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
