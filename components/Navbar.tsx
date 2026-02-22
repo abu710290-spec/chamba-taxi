@@ -27,7 +27,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'py-3 glass shadow-lg' : 'py-4 sm:py-6 glass shadow-md'
+        isScrolled ? 'py-3 glass shadow-lg' : 'sm:py-6 glass shadow-md'
       }`}
     >
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex items-center justify-between gap-2 sm:gap-4 min-w-0 w-full">
@@ -62,7 +62,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden p-3 glass rounded-xl text-yellow-400"
+          className="md:hidden p-2 glass m-2 rounded-xl text-yellow-400"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -86,7 +86,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}
               transition={{ duration: 0.2 }}
-              className="fixed left-0 right-0 top-[57px] sm:top-[65px] z-50 md:hidden max-h-[calc(100vh-65px)] overflow-y-auto glass border-t border-white/10 shadow-2xl"
+              className="fixed left-0 right-0 top-[57px] sm:top-[65px] z-50 md:hidden max-h-[calc(100vh-65px)] overflow-y-auto border-t border-white/10 shadow-2xl bg-black"
             >
               <div className="p-5 flex flex-col gap-1">
                 {navLinks.map((link) => (

@@ -33,9 +33,14 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 glass-yellow rounded-full mb-4 sm:mb-6 lg:mb-8 z-10 relative"
           >
             <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-yellow-400 fill-yellow-400 shrink-0" />
-            <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.2em] sm:tracking-[0.3em] text-yellow-400 whitespace-nowrap">
-              #1 Rated Taxi Service in Chamba
-            </span>
+            <a
+  href="https://www.instagram.com/thakurramnish/?hl=en"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.2em] sm:tracking-[0.3em] text-yellow-400 whitespace-nowrap hover:text-yellow-300 transition-colors"
+>
+  Service provided by Ramnish Thakur
+</a>
           </motion.div>
 
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-display font-black tracking-tighter leading-[0.9] mb-6 sm:mb-8 break-words">

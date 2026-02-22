@@ -79,7 +79,7 @@ export default function AboutSection() {
               </div>
               <a 
                 href="tel:8219769045"
-                className="w-full md:w-auto bg-yellow-400 text-black px-10 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-yellow-300 transition-all shadow-xl shadow-yellow-400/10 text-center"
+                className="w-full md:w-auto bg-yellow-400 text-black px-10 py-2 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-yellow-300 transition-all shadow-xl shadow-yellow-400/10 text-center"
               >
                 CALL: 8219769045
               </a>

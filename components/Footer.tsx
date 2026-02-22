@@ -69,7 +69,7 @@ export default function Footer() {
                 <div className="p-2 glass rounded-lg shrink-0">
                   <Phone className="w-4 h-4 text-yellow-400" />
                 </div>
-                <a href="tel:8219769045" className="font-display font-black text-lg hover:text-yellow-400 transition-colors">8219769045</a>
+                <a href="tel:8219769045" className="font-display font-black text-lg hover:text-yellow-400 transition-colors">+91 8219769045</a>
               </li>
               <li className="flex items-center gap-3">
                 <div className="p-2 glass rounded-lg bg-green-500/10 border-green-500/20 shrink-0">
